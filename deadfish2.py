@@ -12,32 +12,33 @@ def do(inp):
     global ifThis
     
     if inp == "i":
-        a += 1
+        a += 1 #Increase Accumulator
 
     elif inp == "d":
-        a -= 1
+        a -= 1 #Decrease
 
     elif inp == "s":
-        a *= a
+        a *= a #Square
 
     elif inp == "o":
-        print(a)
+        print(a) #output
 
     elif inp == "O":
-        print(b)
+        print(b) #print string
 
     elif inp == "n":
-        a = 0
+        a = 0 #Reset
 
     elif inp == 'c':
-        print(chr(a))
+        print(chr(a)) #print char value
 
     elif inp == 'h':
-        exit
+        exit #Halt
 
     elif inp == 'r':
-        b = input(">> ")
-
+        b = input(">> ") #Input
+    elif input == 'de':
+        a=a+0.1 #Garbage(?)
 def parse(cmd):
     do(cmd)
 
